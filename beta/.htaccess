@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^beta\.tourlancers\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.beta\.tourlancers\.com$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "http\:\/\/www\.tourlancers\.com\/beta\/Tourlancers" [R=301,L]
+

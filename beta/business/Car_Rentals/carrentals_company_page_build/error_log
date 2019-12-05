@@ -1,0 +1,112 @@
+[19-Jul-2018 16:27:03 Etc/GMT] PHP Warning:  preg_match(): No ending delimiter '^' found in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Jul-2018 16:27:03 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 53
+[19-Jul-2018 16:27:08 Etc/GMT] PHP Warning:  preg_match(): No ending delimiter '^' found in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Jul-2018 16:27:08 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 53
+[19-Jul-2018 16:27:12 Etc/GMT] PHP Warning:  preg_match(): No ending delimiter '^' found in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Jul-2018 16:27:22 Etc/GMT] PHP Warning:  preg_match(): No ending delimiter '^' found in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Jul-2018 16:28:25 Etc/GMT] PHP Notice:  Undefined variable: id in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 15
+[19-Jul-2018 16:28:25 Etc/GMT] PHP Warning:  preg_match(): No ending delimiter '^' found in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 15
+[19-Jul-2018 16:28:34 Etc/GMT] PHP Notice:  Undefined variable: id in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 15
+[19-Jul-2018 16:28:34 Etc/GMT] PHP Warning:  preg_match(): No ending delimiter '^' found in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 15
+[19-Jul-2018 17:21:53 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 56
+[19-Jul-2018 17:23:39 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 59
+[19-Jul-2018 17:23:46 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 59
+[19-Jul-2018 17:28:06 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Jul-2018 17:30:57 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Jul-2018 18:25:39 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Jul-2018 18:25:56 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Jul-2018 18:26:07 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[13-Aug-2018 09:47:58 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[04-Nov-2018 10:28:30 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[04-Nov-2018 10:28:31 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[01-Mar-2019 19:44:36 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[07-Mar-2019 12:41:52 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Mar-2019 08:36:33 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Mar-2019 08:36:35 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[18-Apr-2019 02:47:55 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[03-May-2019 02:57:17 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[14-May-2019 00:03:52 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[14-May-2019 00:21:01 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[13-Jun-2019 08:11:17 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[02-Jul-2019 15:22:00 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[02-Jul-2019 15:22:46 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[19-Aug-2019 01:33:02 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48
+[05-Sep-2019 15:35:41 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/business/Car_Rentals/carrentals_company_page_build/user.php on line 48

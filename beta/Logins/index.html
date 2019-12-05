@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="Logins/app.js">
+    firebase.auth().onAuthStateChanged(function(user) {
+if (user) {
+  // User is signed in.
+  document.getElementById("username").innerHTML=user.displayName;
+
+} else {
+  document.getElementById("username").innerHTML="Login / SignUp";
+}
+});
+var config = {
+  apiKey: "AIzaSyB6M9ZFNHcZ0zGl5n9Fl4veyjeH8NL7ChU",
+  authDomain: "tourlancers-logins.firebaseapp.com",
+  databaseURL: "https://tourlancers-logins.firebaseio.com",
+  projectId: "tourlancers-logins",
+  storageBucket: "tourlancers-logins.appspot.com",
+  messagingSenderId: "213279812943"
+};
+firebase.initializeApp(config);
+function google(){
+  var provider = new firebase.auth.GoogleAuthProvider();
+firebase.auth().signInWithPopup(provider).then(function(result) {
+  // This gives you a Google Access Token. You can use it to access the Google API.
+  var token = result.credential.accessToken;
+  // The signed-in user info.
+  var user = result.user;
+  console.log(user.displayName);
+  console.log(user.email);
+  // ...
+}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  console.log(errorCode);
+  console.log(errorMessage)
+  // The email of the user's account used.
+  var email = error.email;
+  // The firebase.auth.AuthCredential type that was used.
+  var credential = error.credential;
+  // ...
+});
+
+// Step 1.
+// User tries to sign in to Google.
+auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).catch(function(error) {
+  // An error happened.
+  if (error.code === 'auth/account-exists-with-different-credential') {
+    // Step 2.
+    // User's email already exists.
+    // The pending Google credential.
+    var pendingCred = error.credential;
+    // The provider account's email address.
+    var email = error.email;
+    // Get sign-in methods for this email.
+    auth.fetchSignInMethodsForEmail(email).then(function(methods) {
+      // Step 3.
+      // If the user has several sign-in methods,
+      // the first method in the list will be the "recommended" method to use.
+      if (methods[0] === 'password') {
+        // Asks the user his password.
+        // In real scenario, you should handle this asynchronously.
+        var password = promptUserForPassword(); // TODO: implement promptUserForPassword.
+        auth.signInWithEmailAndPassword(email, password).then(function(user) {
+          // Step 4a.
+          return user.link(pendingCred);
+        }).then(function() {
+          // Google account successfully linked to the existing Firebase user.
+          goToApp();
+        });
+        return;
+      }
+
+      // TODO: implement getProviderForProviderId.
+      var provider = getProviderForProviderId(methods[0]);
+      auth.signInWithPopup(provider).then(function(result) {
+        result.user.linkAndRetrieveDataWithCredential(pendingCred).then(function(usercred) {
+          // Google account successfully linked to the existing Firebase user.
+          goToApp();
+        });
+      });
+    });
+  }
+});
+
+}
+
+    </script>
+
+
+  </head>
+      <title>Tourlancers</title>
+  <body>
+    <!--Nav bar start-->
+    <div class="navbar-fixed">
+
+        <nav class="red darken-2">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo logo">Tourlancers.com</a>
+                    <a href="" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+
+                         <li>
+                            <a class='dropdown-trigger1' href='#' data-target='dropdown1'><i class="fa fa-shopping-cart"></i> <span class="white-text"> Deals </span> <i class="material-icons right">arrow_drop_down</i></a>
+
+
+                            <ul id='dropdown1' class='dropdown-content'>
+
+                              <li><a href="#!"><i class="fa fa-store"></i> Rooms </a></li>
+                              <li class="divider" tabindex="-1"></li>
+                              <li><a href="#!"><i class="fa fa-building"></i> Hotels </a></li>
+                              <li class="divider" tabindex="-1"></li>
+                              <li><a href="#!"><i class="fa fa-user-circle"></i> Guides </a></li>
+                              <li class="divider" tabindex="-1"></li>
+                          </ul>
+                        </li>
+
+
+
+                        <li>
+                            <a href="contact/index.php"><i class="fa fa-suitcase"></i> <span class="white-text"> TL for Business </span></a>
+                        </li>
+                         <li>
+                            <a class='dropdown-trigger2' href='#' data-target='dropdown2'><i class="fa fa-user"></i> <span class="white-text" >Login / Sign Up</span><i class="material-icons right">arrow_drop_down</i> </a>
+                            <ul id='dropdown2' class='dropdown-content'>
+                                <li><a href="signin-signup/sign-up.php"> Login </a></li>
+                                <li class="divider" tabindex="-1"></li>
+                                <li><a href="Logins/signin.html"> Sign Up</a></li>
+                              </ul>
+                         </li>
+                         <li>
+                             <a href="#" id="username"><i class="fa fa-user" onclick="google()" style="font-size:24px"></i>Hello</a>
+                         </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav red darken-2" id="mobile-nav">
+        <li>
+            <a href="index.php"><i class="fa fa-home"></i><span class="white-text"> Home </span></a>
+        </li>
+        <li>
+            <a class='dropdown-trigger3' href='#' data-target='dropdown3'><i class="fa fa-shopping-cart"></i> <span class="white-text"> Deals</span><i class="material-icons right">arrow_drop_down</i></a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown3' class='dropdown-content'>
+              <li><a href="#!"><i class="fa fa-plane"></i>Flight</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="#!"><i class="fa fa-store"></i>Rooms</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="#!"><i class="fa fa-building"></i>Hotels</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="#!"><i class="fa fa-utensils"></i>Restaurant</a></li>
+              <li class="divider" tabindex="-1"></li>
+
+
+            </ul>
+        </li>
+
+
+
+        <li>
+                <a href="#"><i class="fa fa-suitacse"></i> <span class="white-text"> TL for Business </span></a>
+        </li>
+         <li>
+            <a class='dropdown-trigger4' href='#' data-target='dropdown4'><i class="fa fa-user"></i> <span class="white-text">Login / Sign Up</span><i class="material-icons right">arrow_drop_down</i> </a>
+            <ul id='dropdown4' class='dropdown-content'>
+                <li><a href="signin-signup/sign-up.php">Login</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="Logins/signin.html">Sign Up</a></li>
+            </ul>
+        </li>
+
+
+        </ul>
+    <!--Nav bar End-->
+
+    <!--Start of Sliders-->
+    <section class="slider">
+
+        <ul class="slides">
+          <li>
+            <img src="img/houses.jpg">
+            <div class="caption center-align">
+              <h3 id="username">Take your Dream Vacation!</h3>
+              <h5 class="light grey-text text-lighten-3">World Tour is dream of everyone to see the world once in a life</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/building.jpg">
+            <div class="caption left-align">
+              <h3>Join the Tourlancers Community</h3>
+              <h5 class="light grey-text text-lighten-3">Help us grow and build Tourism in India.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/hills.jpg">
+            <div class="caption right-align">
+              <h3>Explore India like never before</h3>
+              <h5 class="light grey-text text-lighten-3">Get the best Guides, tour operators, Hotels. Make your journey a rememberable one.</h5>
+            </div>
+          </li>
+
+           <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
+
+           </section>
+        </ul>
+   </section>
+
+    <!--End of Sliders-->
+    <!--Search Area-->
+    <nav class="hide-on-med-and-down">
+        <div class="nav-wrapper red darken-2">
+          <div class="container1">
+            <ul id="nav-mobile" class="right">
+                <li><a href="#!">PURI</a></li>
+                <li><a href="#!">ANDAMAN & NICOBAR</a></li>
+                <li><a href="#!">GOA</a></li>
+                <li><a href="#!">ASSAM</a></li>
+                <li><a href="#!">CHENNAI</a></li>
+                <li><a href="#!">BANGALORE</a></li>
+                <li><a href="#!">HYDERABAD</a></li>
+                <li><a href="#!">KOLKATA</a></li>
+                <li><a href="#!">DELHI</a></li>
+                <li><a href=""><i class="fa fa-map-marker-alt"></i></a></li>
+                <li><div class="input-field col s4">
+                     <input type="text" placeholder="  Cities" class=" white">
+                   </div>
+                </li>
+                <li><a class='dropdown-trigger5' href='' data-target='dropdown5'><i class="material-icons left">search</i>DEALS <i class="material-icons right">arrow_drop_down</i></a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown5' class='dropdown-content'>
+                      <li><a href="#!">Hotels</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">Travel Operators</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">Car Rentals</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                    </ul>
+                </li>
+
+              </ul>
+          </div>
+        </div>
+      </nav>
+     <!--Medium screen nav-->
+      <nav class="hide-on-large-only hide-on-small-only">
+        <div class="nav-wrapper red darken-2">
+          <div class="center-align">
+            <ul id="nav-mobile" class="right">
+                <li><a href=""><i class="fa fa-map-marker-alt"></i></a></li>
+                <li><a class='dropdown-trigger6' href='' data-target='dropdown6'>OUR CITIES <i class="material-icons right">arrow_drop_down</i></a>
+
+                   <!-- Dropdown Structure -->
+                   <ul id='dropdown6' class='dropdown-content'>
+                      <li><a href="#!">PURI</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">ANDAMAN AND NICOBAR</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">GOA</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">ASSAM</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">CHENNAI</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">BANGALORE</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">HYDERABAD</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">KOLKATA</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">DELHI</a></li>
+                  </ul>
+                </li>
+                <li><div class="input-field col s4">
+                     <input type="text" placeholder="  Cities" class=" white">
+                   </div>
+                </li>
+                <li><a href="#"><i class="material-icons">search</i></a></li>
+                <li><a class='dropdown-trigger7' href='' data-target='dropdown7'>DEALS <i class="material-icons right">arrow_drop_down</i></a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown7' class='dropdown-content'>
+                      <li><a href="#!">Hotels</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">Travel Operators</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                      <li><a href="#!">Car Rentals</a></li>
+                      <li class="divider" tabindex="-1"></li>
+                    </ul>
+                </li>
+
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Medium screen nav end-->
+      <!--for mobile screen only-->
+        <nav class="hide-on-med-and-up small-nav">
+            <div class="nav-wrapper red darken-2">
+                 <div class="container1">
+                    <div class="row">
+                       <div class="col s2 right-align">
+                          <ul id="nav-mobile" class="right">
+
+                               <li><a class='dropdown-trigger8' href='' data-target='dropdown8'><i class="fa fa-map-marker-alt"></i></a>
+
+                                      <!-- Dropdown Structure -->
+                                  <ul id='dropdown8' class='dropdown-content'>
+                                    <li><a href="#!">PURI</a></li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li><a href="#!">CHENNAI</a></li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li><a href="#!">BANGALORE</a></li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li><a href="#!">HYDERABAD</a></li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li><a href="#!">KOLKATA</a></li>
+                                    <li class="divider" tabindex="-1"></li>
+                                  <li><a href="#!">DELHI</a></li>
+                                </ul>
+                             </li>
+                          </ul>
+                       </div>
+                       <div class="input-field col s5">
+                          <input class="white" type="text" placeholder="CITY GUIDE">
+                       </div>
+                       <div class="col s2"><a href="#"><i class="material-icons right">search</i></a></div>
+                       <div class="col s3">
+                         <ul id="nav-mobile" class="right">
+                           <li><a class='dropdown-trigger9' href='' data-target='dropdown9'>DEALS</a>
+
+                          <!-- Dropdown Structure -->
+                          <ul id='dropdown9' class='dropdown-content'>
+                               <li><a href="#!">Hotels</a></li>
+                               <li class="divider" tabindex="-1"></li>
+                               <li><a href="#!">Travel Operators</a></li>
+                               <li class="divider" tabindex="-1"></li>
+                               <li><a href="#!">Car Rentals</a></li>
+                               <li class="divider" tabindex="-1"></li>
+                         </ul>
+                     </li>
+                    </ul>
+                      </div>
+                   </div>
+                 </div>
+            </div>
+        </nav>
+     <!--for mobile screen only-End-->
+    <!--Search Area End-->
+    <!--Section icon boxes-->
+    <section class="section section-icons  blue-grey lighten-4 center">
+            <div class="container">
+                <div class="row">
+                    <h4 class="center"><span class="red-text">Our</span> Deals</h4>
+                    <a href="#">
+                    <div class="col s12 m4">
+                        <div class="card-panel"><i class="material-icons large teal-text">room</i>
+                        <h4><a style="color:black;"  href="">Pick Room </a></h4>
+                        <p> Book Hotels and have a comfortable stay at them. Get hassle-free stays at the best hotels of India
+                       </p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="#">
+                    <div class="col s12 m4">
+                        <div class="card-panel"><i class="material-icons large teal-text">store</i>
+                            <h4><a style="color:black;" href="">Travel Operators </a></h4>
+                            <p>They will guide you throughout the entire journey and complete your tour like professionals</p>
+                        </div>
+                    </div>
+                    </a>
+                  <a href="#">
+                      <div class="col s12 m4">
+                         <div class="card-panel"><i class="material-icons large teal-text">person</i>
+                            <h4><a style="color:black;" href="">Tour guides</a></h4>
+                            <p>Book Local Tour guides. Get connected to them and make your trips exciting. </p>
+                         </div>
+                    </div>
+                 </a>
+                </div>
+                 <!--Video-->
+                  <div class="row">
+                    <div class="col s12 m6">
+                     <div class="video-container">
+                        <iframe width="540" height="370" src="https://biteable.com/watch/embed/tourlancers-1766681" frameborder="0" allowfullscreen></iframe>
+                     </div>
+                   </div>
+                 <div class="col s12 m6">
+                    <h5> Summer is at Tourlancers </h5>
+
+                      <p style="padding-left:10%;text-align:justify;">A tangerine sunset. A shimmering pool. A kiss to the clouds. Choose from a range of stays with Tourlancers - Hotels, Homes, Houseboats, Treehouses, Apartments, Resorts, Villas, Townhouses. #SummerIsAtTourlancers at 50% off! </p>
+                      <a href="#" class="waves-effect waves-light btn btn-large red">BOOK NOW!</a>
+                 </div>
+                </div>
+               <!--Video End -->
+            </div>
+        </section>
+        <!--icon boxes end -->
+
+
+
+         <!--popular places Start-->
+     <section id="popular" class="section grey darken-4 section-popular scrollspy">
+            <div class="container">
+                <div class="row">
+                      <h4 class="center"><span class="teal-text">Popular Places</span></h4>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/hill-station-1576868_640.jpg" alt="london">
+                                <span class="card-title">Hill Station</span>
+
+                            </div>
+                            <div class="card-content">
+                               <b>Come and enjoy the beautiful day of Hill Station </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                      <div class="card">
+                          <div class="card-image">
+                              <img  src="img/shimla-555897_640.jpg" alt="Shimla">
+                              <span style="color:bisque" class="card-title">Shimla</span>
+                          </div>
+                          <div class="card-content">
+                             <b>Let's have a fun on the snow layers of Shimla </b>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col s12 m4">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="img/bedroom-1285156_640.jpg" alt="gantok">
+                              <span class="card-title">Beautiful Bedroom</span>
+                          </div>
+                          <div class="card-content">
+                            <b> A beautiful day starts with a beautiful morning ,Thiland </b>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+
+                      <div class="col s12 m4">
+                          <div class="card">
+                              <div class="card-image">
+                                  <img src="img/houses.jpg" alt="london">
+                                  <span class="card-title">Beautiful Evening</span>
+
+                              </div>
+                              <div class="card-content">
+                                 <b>Come and enjoy the beautiful day of Hill Station </b>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img  src="img/waterfall-1369319_640.jpg" alt="Shimla">
+                                <span style="color:bisque" class="card-title">Gangtok,Waterfall</span>
+                            </div>
+                            <div class="card-content">
+                               <b>Let's have a fun on the waterfall of Gangtok </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/mountains-2915425_640.jpg" alt="gantok">
+                                <span class="card-title">Dark Evening,Himalaya mountain</span>
+                            </div>
+                            <div class="card-content">
+                              <b> A beautiful day starts with a beautiful dark evening ,Himalaya </b>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+       </section>
+      <!--popular places end-->
+
+      <!--Social Media follow-->
+     <section class="section section-follow grey darken-1 white-text center">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h4>Follow Tourlancers</h4>
+                        <p>Follow us on social media for special offers</p>
+
+                          <a href="https://www.linkedin.com/company/tourlancers" class="white-text">
+                                  <i class="fab fa-linkedin fa-4x"></i>
+                          </a>
+
+                    </div>
+                </div>
+            </div>
+
+           </section>
+
+          <!--Social Media follow End-->
+          <!--footer-->
+      <section class="section grey darken-1 white-text center">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m4">
+                      <h5>Information</h5>
+                      <p>About us | Our products | Press Release</p>
+                      <p>Customer Testimonial | Partner with Us </p>
+                     </div>
+                   <div class="col s12 m4">
+                       <h5>Customer Care</h5>
+                       <p>Support & FAQ | Term & Condition | Privacy Policy</p>
+                       <p>User Agreement | Travel Agents</p>
+                   </div>
+                    <div class="col s12 m4">
+                       <h5>Headquarters</h5>
+                       <p>Kolkata, India</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+      <!--footer End-->
+      <!--footer-->
+     <footer class="section grey darken-1 white-text center">
+            <p class="flow-text">Tourlancers &copy;2017-2018</p>
+        </footer>
+       <!--footer end-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+     const sideNav=document.querySelector('.sidenav');
+M.Sidenav.init(sideNav,{});
+$('.dropdown-trigger1').dropdown();
+$('.dropdown-trigger2').dropdown();
+$('.dropdown-trigger3').dropdown();
+$('.dropdown-trigger4').dropdown();
+$('.dropdown-trigger5').dropdown();
+$('.dropdown-trigger6').dropdown();
+$('.dropdown-trigger7').dropdown();
+$('.dropdown-trigger8').dropdown();
+$('.dropdown-trigger9').dropdown();
+//slider
+const slider=document.querySelector('.slider');
+M.Slider.init(slider,{
+      indicators:false,
+      height:400,
+      transition:500,
+      interval:3000});
+const mb=document.querySelectorAll('.materialboxed');
+M.Materialbox.init(mb,{});
+    </script>
+  </body>
+</html>

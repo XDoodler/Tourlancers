@@ -1,0 +1,330 @@
+[08-Sep-2018 09:20:28 Etc/GMT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND travel_from= ?%' at line 1 in /home/tourlwg2/public_html/beta/catagory/new/filter.php:232
+Stack trace:
+#0 /home/tourlwg2/public_html/beta/catagory/new/filter.php(232): PDO->prepare('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/filter.php on line 232
+[08-Sep-2018 09:20:37 Etc/GMT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND travel_from= ?%' at line 1 in /home/tourlwg2/public_html/beta/catagory/new/filter.php:232
+Stack trace:
+#0 /home/tourlwg2/public_html/beta/catagory/new/filter.php(232): PDO->prepare('SELECT * FROM t...')
+#1 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/filter.php on line 232
+[19-Sep-2018 18:06:00 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[19-Sep-2018 18:06:00 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[21-Sep-2018 19:00:54 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[21-Sep-2018 19:00:54 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[26-Sep-2018 00:34:15 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[26-Sep-2018 00:34:15 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[27-Sep-2018 18:05:51 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[27-Sep-2018 18:05:51 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[03-Oct-2018 17:41:45 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[03-Oct-2018 17:41:45 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[16-Oct-2018 07:04:53 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[16-Oct-2018 07:04:53 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[18-Oct-2018 02:38:17 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[18-Oct-2018 02:38:17 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[22-Oct-2018 07:44:59 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[22-Oct-2018 07:44:59 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[24-Oct-2018 04:57:29 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[24-Oct-2018 04:57:29 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[29-Oct-2018 10:29:40 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[29-Oct-2018 10:29:40 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[06-Nov-2018 05:35:23 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[06-Nov-2018 05:35:23 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[09-Nov-2018 06:44:13 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[09-Nov-2018 06:44:13 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[10-Nov-2018 13:35:16 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[10-Nov-2018 13:35:16 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[12-Nov-2018 15:40:31 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[12-Nov-2018 15:40:31 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[16-Nov-2018 02:10:06 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[16-Nov-2018 02:10:06 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[12-Dec-2018 06:06:06 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[12-Dec-2018 06:06:06 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[14-Dec-2018 09:40:38 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[14-Dec-2018 09:40:38 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[15-Dec-2018 21:10:48 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[15-Dec-2018 21:10:48 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[16-Dec-2018 12:14:37 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[16-Dec-2018 12:14:37 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[17-Dec-2018 13:06:55 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[17-Dec-2018 13:06:55 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[18-Dec-2018 13:57:54 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[18-Dec-2018 13:57:54 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[19-Dec-2018 20:31:27 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[19-Dec-2018 20:31:27 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[22-Dec-2018 04:49:24 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[22-Dec-2018 04:49:24 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[24-Dec-2018 03:26:19 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[24-Dec-2018 03:26:19 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[25-Dec-2018 19:59:23 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[25-Dec-2018 19:59:23 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[26-Dec-2018 11:40:35 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[26-Dec-2018 11:40:35 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[28-Dec-2018 06:42:35 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[28-Dec-2018 06:42:35 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[29-Dec-2018 16:34:24 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[29-Dec-2018 16:34:24 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[30-Dec-2018 21:01:24 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[30-Dec-2018 21:01:25 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[31-Dec-2018 23:45:50 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[31-Dec-2018 23:45:50 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[02-Jan-2019 22:30:15 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[02-Jan-2019 22:30:15 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[06-Jan-2019 03:25:49 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[06-Jan-2019 03:25:49 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[07-Jan-2019 11:31:10 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[07-Jan-2019 11:31:10 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[10-Jan-2019 04:02:56 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[10-Jan-2019 04:02:56 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[10-Jan-2019 16:50:19 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[10-Jan-2019 16:50:19 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[11-Jan-2019 20:20:58 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[11-Jan-2019 20:20:58 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[11-Jan-2019 22:07:45 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[11-Jan-2019 22:07:46 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[13-Jan-2019 18:19:30 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[13-Jan-2019 18:19:31 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[17-Jan-2019 22:41:30 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[17-Jan-2019 22:41:30 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[19-Jan-2019 18:09:59 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[19-Jan-2019 18:09:59 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[26-Jan-2019 10:04:05 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[26-Jan-2019 10:04:05 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[04-Feb-2019 06:55:19 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[04-Feb-2019 06:55:19 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[15-Feb-2019 19:41:43 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[15-Feb-2019 19:41:43 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[16-Feb-2019 17:56:02 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[16-Feb-2019 17:56:02 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[21-Feb-2019 10:46:13 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[21-Feb-2019 10:46:13 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[26-Feb-2019 17:26:41 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[26-Feb-2019 17:26:41 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[25-Mar-2019 17:14:37 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[25-Mar-2019 17:14:37 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[27-Mar-2019 12:48:07 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[27-Mar-2019 12:48:07 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[28-Mar-2019 20:39:27 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[28-Mar-2019 20:39:27 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[29-Mar-2019 23:00:22 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[29-Mar-2019 23:00:22 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[31-Mar-2019 00:30:25 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[31-Mar-2019 00:30:25 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[03-Apr-2019 03:39:18 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[03-Apr-2019 03:39:18 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[04-Apr-2019 05:12:56 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[04-Apr-2019 05:12:56 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[18-Apr-2019 10:06:41 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[18-Apr-2019 10:06:41 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[27-Apr-2019 01:53:02 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[27-Apr-2019 01:53:02 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[04-May-2019 22:28:23 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[04-May-2019 22:28:23 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[22-May-2019 19:43:59 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[22-May-2019 19:43:59 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[24-May-2019 10:20:54 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[24-May-2019 10:20:54 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[25-May-2019 20:41:33 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[25-May-2019 20:41:33 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[26-May-2019 23:08:21 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[26-May-2019 23:08:21 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[28-May-2019 00:38:34 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[28-May-2019 00:38:34 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[29-May-2019 03:31:46 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[29-May-2019 03:31:46 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[10-Jul-2019 09:03:42 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[10-Jul-2019 09:03:42 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25
+[12-Aug-2019 16:56:14 Etc/GMT] PHP Notice:  Undefined index: city in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 6
+[12-Aug-2019 16:56:14 Etc/GMT] PHP Fatal error:  Uncaught customException in /home/tourlwg2/public_html/beta/catagory/new/index.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/tourlwg2/public_html/beta/catagory/new/index.php on line 25

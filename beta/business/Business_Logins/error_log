@@ -1,0 +1,7 @@
+[20-Oct-2018 14:42:35 Etc/GMT] PHP Notice:  Undefined index: logged_in in /home/tourlwg2/public_html/beta/business/Business_Logins/profile.php on line 6
+[20-Oct-2018 14:42:35 Etc/GMT] PHP Notice:  Undefined variable: active in /home/tourlwg2/public_html/beta/business/Business_Logins/profile.php on line 49
+[20-Oct-2018 14:42:35 Etc/GMT] PHP Notice:  Undefined variable: active in /home/tourlwg2/public_html/beta/business/Business_Logins/profile.php on line 56
+[20-Oct-2018 14:42:35 Etc/GMT] PHP Notice:  Undefined variable: first_name in /home/tourlwg2/public_html/beta/business/Business_Logins/profile.php on line 65
+[20-Oct-2018 14:42:35 Etc/GMT] PHP Notice:  Undefined variable: last_name in /home/tourlwg2/public_html/beta/business/Business_Logins/profile.php on line 65
+[20-Oct-2018 14:42:35 Etc/GMT] PHP Notice:  Undefined variable: email in /home/tourlwg2/public_html/beta/business/Business_Logins/profile.php on line 66
+[20-Oct-2018 14:42:35 Etc/GMT] PHP Notice:  Undefined variable: active in /home/tourlwg2/public_html/beta/business/Business_Logins/profile.php on line 68

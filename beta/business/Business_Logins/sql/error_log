@@ -1,0 +1,1 @@
+[29-Jun-2018 15:31:46 Etc/GMT] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'tourlwg2'@'localhost' (using password: NO) in /home/tourlwg2/public_html/beta/business/sql/sql_import.php on line 9

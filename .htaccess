@@ -1,0 +1,9 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tourlancers\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tourlancers\.com$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^beta\/Business_Logins$ "https\:\/\/www\.tourlancers\.com\/beta\/business\/Business_Logins" [R=302,L]
+
+ErrorDocument 404 /404.html

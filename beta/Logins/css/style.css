@@ -1,0 +1,45 @@
+body
+{
+    font-family: 'Cabin', sans-serif;
+}
+.logo
+{
+    font-family: 'Pacifico', cursive;
+}
+.section-search 
+{
+    padding:5px !important;
+    font-size:18px !important;
+    width:100% !important;
+    border:#f4f4f4 3px solid !important;
+}
+.section-follow .fa-4x
+{
+    margin:5px 10px;
+}
+.guides
+{
+	padding-left:20%;
+    text-align: right;
+    
+
+}
+.search
+{
+	text-align: left;
+	margin-top:1%;
+}
+
+.button
+{
+	text-align: center;
+	margin-top:2%;
+
+}
+#particles-js
+{
+background:linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+height: 100vh;
+width: 100vw;
+
+}
