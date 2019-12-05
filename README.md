@@ -18,4 +18,8 @@ Tourlancers.com was built to aggregate travel operators, agencies and service pr
 Clone the repository and run the "index.php" on your local machine.
 ![Home Page](https://github.com/XDoodler/Tourlancers/blob/master/Screenshot%20from%202019-12-05%2009-57-45.png)
 
+The Route map of Tourlancers looks somewhat like this.
+![The Route Map](https://github.com/XDoodler/Tourlancers/blob/master/img/DFD.jpeg)
+
+
 Note : We have kept our Databases hidden to maintain privacy of users. 
