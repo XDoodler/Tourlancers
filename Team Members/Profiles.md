@@ -1,4 +1,4 @@
-# TECHNICAL TEAM 
+# TECHNICAL TEAM MEMBERS
 
 1. MD Shahid (https://github.com/dshahid380)
 
