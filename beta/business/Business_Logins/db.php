@@ -6,8 +6,4 @@ error_reporting(E_ALL);
 
 
 /* Database connection settings */
-$host = '208.91.198.170';
-$user = 'tourlwg2_root';
-$pass = 'M_vOku4FTEpa';
-$db = 'tourlwg2_tourlancers';
-$mysqli = new mysqli($host,$user,$pass,$db) or die($mysqli->error);
+
