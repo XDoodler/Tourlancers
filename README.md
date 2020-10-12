@@ -11,9 +11,7 @@ Tourlancers.com was built to aggregate travel operators, agencies and service pr
 
 1. MD Shahid (https://github.com/dshahid380)
 
-2. Soumit Sarkar (https://github.com/soumitsarkar)
-
-3. Chandrima Das (https://github.com/chandrima099) 
+2. Soumit Sarkar (https://github.com/soumitsarkar) 
 
 3. Shouvik Mitra (https://github.com/iamshouvikmitra)
 
